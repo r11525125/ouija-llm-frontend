@@ -266,8 +266,8 @@
         this.displayedReply = "";
   
         try {
-          const apiUrl = "http://<REMOVED_IP>:11434/api/generate";
-          const res = await fetch(apiUrl, {
+            const apiUrl = import.meta.env.VITE_API_BASE_URL + '/api/generate'
+            const res = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
