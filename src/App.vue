@@ -246,7 +246,7 @@
         this.displayedReply = "";
     
         try {
-          const apiUrl = "http://<REMOVED_IP>:11434/api/generate";
+          const apiUrl = "http://127.0.0.1:11434/api/generate";
     
           const res = await fetch(apiUrl, {
             method: "POST",
